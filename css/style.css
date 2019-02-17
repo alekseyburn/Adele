@@ -114,7 +114,7 @@ body {
   background-color: #18a3dd;
 }
 
-.page-header__link {
+.logo-link {
   font-weight: 700;
   font-size: 15px;
   line-height: 50px;
@@ -122,36 +122,39 @@ body {
   color: #656973;
 }
 
-.promo__lead {
-  margin: 0;
-
+.promo-header {
   font-weight: 800;
-  font-size: 72px;
-  line-height: 72px;
   font-family: "Raleway", Arial, sans-serif;
   color: #333740;
+}
+
+.first-lead {
+  margin: 0;
+
+  font-size: 72px;
+  line-height: 72px;
   text-transform: uppercase;
 }
 
-.promo__lead:nth-child(2) {
+.second-lead {
   font-size: 24px;
   line-height: 24px;
   text-transform: capitalize;
   letter-spacing: 0.025em;
 }
 
-.promo__text {
+.promo-text {
   letter-spacing: 0.025em;
 }
 
-.promo__video-link {
+.video-btn {
   font-weight: 700;
   line-height: 30px;
   color: #333740;
   text-transform: uppercase;
 }
 
-.about-supplement__item--count {
+.supplement-item.count {
   font-weight: 900;
   font-size: 72px;
   line-height: 72px;
@@ -159,7 +162,7 @@ body {
   letter-spacing: 0.025em;
 }
 
-.about-supplement__item--unit {
+.supplement-item.unit {
   font-weight: 700;
   line-height: 22px;
   color: #18a3dd;
@@ -167,7 +170,7 @@ body {
   letter-spacing: 0.025em;
 }
 
-.about-supplement__item--info {
+.supplement-item.info {
   color: #a9a9a9;
   letter-spacing: 0.025em;
 }
@@ -177,7 +180,7 @@ body {
   letter-spacing: 0.025em;
 }
 
-.site-header h2 {
+.site-lead {
   font-weight: 800;
   font-size: 30px;
   line-height: 30px;
@@ -185,70 +188,192 @@ body {
   text-transform: uppercase;
 }
 
-.site-header span {
+.site-lead span {
   font-weight: 300;
 }
 
-.site-header p {
+.site-text {
   font-family: "Lato", Arial, sans-serif;
   color: #83888f;
 }
 
-.features__list {
+.features-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
-.features__title {
-  font-family: "Raleway", Arial, sans-serif;
+.ffeatures-item .title {
   font-weight: 700;
+  font-size: 20px;
+  font-family: "Raleway", Arial, sans-serif;
+  color: #333740;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-  color: #333740;
-  font-size: 20px;
 }
 
-.features__description {
+.features-item .description {
   color: #5b5f64;
   letter-spacing: 0.025em;
 }
 
-.results__list {
+.results-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
-.results__count {
+.results-item .count {
+  font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  font-weight: 700;
   color: #333740;
 }
 
-.results__count span {
+.results-item span {
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 300;
   text-transform: uppercase;
 }
 
-.results__time th {
-  font-size: 16px;
+.results-item .time {
   font-weight: 300;
+  font-size: 16px;
   line-height: 50px;
-  letter-spacing: 0.025em;
   color: #18a3dd;
+  letter-spacing: 0.025em;
 }
 
-.results__name {
-  font-family: "Raleway", Arial, sans-serif;
+.name {
   font-weight: 700;
+  font-family: "Raleway", Arial, sans-serif;
   color: #333740;
   text-transform: uppercase;
 }
 
-.results__age {
+.age {
   text-transform: uppercase;
+}
+
+.testimonials .site-lead {
+  color: #e5e5e5;
+}
+
+.testimonials .site-text {
+  color: #767a7d;
+}
+
+.testimonials-item .text {
+  color: #a9a9a9;
+  font-style: italic;
+  letter-spacing: 0.025em;
+}
+
+.author {
+  font-weight: 700;
+  font-family: "Raleway", Arial, sans-serif;
+  color: #e5e5e5;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.025em;
+}
+
+.location {
+  font-size: 14px;
+  color: #a9a9a9;
+  letter-spacing: 0.025em;
+}
+
+.facts-head {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  color: #333740;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.second-column {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.second-column span {
+  font-weight: 300;
+}
+
+.facts-item .name {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Lato", Arial, sans-serif;
+  text-transform: none;
+}
+
+.facts-btn span {
+  font-weight: 300;
+}
+
+.about-item .title {
+  font-weight: 700;
+  font-family: "Raleway", Arial, sans-serif;
+  color: #333740;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.about-item .count {
+  font-weight: 300;
+  color: #333740;
+}
+
+.certifications .lead {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Raleway", Arial, sans-serif;
+  color: #333740;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.certifications .text {
+  color: #83888f;
+}
+
+.certifications-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-order .title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  font-family: "Raleway", Arial, sans-serif;
+  color: #333740;
+  text-transform: uppercase;
+}
+
+.about-order .count {
+  font-size: 20px;
+  color: #333740;
+  letter-spacing: 0.025em;
+}
+
+.order .description {
+  letter-spacing: 0.025em;
+}
+
+.subscribe .site-lead {
+  color: #e5e5e5;
+}
+
+.subscribe .site-text {
+  color: #767a7d;
 }
