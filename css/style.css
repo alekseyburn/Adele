@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaNeueLTStd-BdCn.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/ralewaylight.woff2") format('woff2'), url("../fonts/ralewaylight.woff") format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/ralewaybold.woff2") format('woff2'), url("../fonts/ralewaybold.woff") format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/ralewayextrabold.woff2") format('woff2'), url("../fonts/ralewayextrabold.woff") format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/latolight.woff2") format('woff2'), url("../fonts/latolight.woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/latolightitalic.woff2") format('woff2'), url("../fonts/latolightitalic.woff") format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/latobold.woff2") format('woff2'), url("../fonts/latobold.woff") format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/latoblack.woff2") format('woff2'), url("../fonts/latoblack.woff") format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+.page-header__link {
+  font-family: "Helvetica", sans-serif;
+  color: #656973;
+  font-size: 15px;
+  line-height: 50px;
+}
