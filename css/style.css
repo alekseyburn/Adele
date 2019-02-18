@@ -175,12 +175,12 @@ body {
   letter-spacing: 0.025em;
 }
 
-.site-header {
+.section-header {
   font-family: "Raleway", Arial, sans-serif;
   letter-spacing: 0.025em;
 }
 
-.site-lead {
+.section-lead {
   font-weight: 800;
   font-size: 30px;
   line-height: 30px;
@@ -188,11 +188,11 @@ body {
   text-transform: uppercase;
 }
 
-.site-lead span {
+.section-lead span {
   font-weight: 300;
 }
 
-.site-text {
+.section-text {
   font-family: "Lato", Arial, sans-serif;
   color: #83888f;
 }
@@ -258,11 +258,11 @@ body {
   text-transform: uppercase;
 }
 
-.testimonials .site-lead {
+.testimonials .section-lead {
   color: #e5e5e5;
 }
 
-.testimonials .site-text {
+.testimonials .section-text {
   color: #767a7d;
 }
 
@@ -370,10 +370,61 @@ body {
   letter-spacing: 0.025em;
 }
 
-.subscribe .site-lead {
+.subscribe .section-lead {
   color: #e5e5e5;
 }
 
-.subscribe .site-text {
+.subscribe .section-text {
   color: #767a7d;
+}
+
+.subscribe-email {
+  font: inherit;
+  letter-spacing: 0.025em;
+}
+
+.subscribe-email::placeholder {
+  color: #ababab;
+  letter-spacing: 0.025em;
+}
+
+.subscribe-btn {
+background-color: #18a3dd;
+color: #ffffff;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.025em;
+}
+
+.feedback-item input {
+  font: inherit;
+  letter-spacing: 0.025em;
+}
+
+.feedback-item input::placeholder {
+  color: #ababab;
+}
+
+.page-footer .copyright {
+  line-height: 22px;
+  letter-spacing: 0.025em;
+}
+
+.info-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-item a {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  color: #666666;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
