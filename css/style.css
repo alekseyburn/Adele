@@ -136,6 +136,52 @@ body {
 .btn:active {
   background-color: #666666;
 }
+
+.section-header {
+  font-family: "Raleway", Arial, sans-serif;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+.section-lead {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333740;
+  text-transform: uppercase;
+}
+
+.section-lead span {
+  position: relative;
+
+  padding-left: 35px;
+
+  font-weight: 300;
+}
+
+.section-lead span::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -3px;
+  left: 14px;
+
+  width: 1px;
+
+  background-color: #18a3dd;
+}
+
+.section-text {
+  margin: 0;
+
+  font-family: "Lato", Arial, sans-serif;
+  color: #83888f;
+  letter-spacing: 0.01em;
+}
+
 /*header*/
 
 .page-header {
@@ -209,7 +255,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 179px;
-  padding-bottom: 171px;
+  padding-bottom: 172px;
 }
 
 .promo-wrapper {
@@ -303,6 +349,41 @@ body {
   right: -55px;
 }
 
+/*about-supplement*/
+
+.about-supplement {
+  position: relative;
+
+  background-color: #0f0816;
+  background-image: linear-gradient(-130deg, #0f0816, #21172b 90%);
+}
+
+.about-supplement .container {
+  padding-top: 106px;
+  padding-bottom: 110px;
+}
+
+.about-supplement .image {
+  position: absolute;
+  top: -123px;
+  left: 51px;
+}
+
+.supplement-table {
+  margin-left: 293px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.supplement-item td {
+  width: 292px;
+}
+
+.supplement-item td:last-child {
+  width: 184px;
+}
+
 .supplement-item.count {
   font-weight: 900;
   font-size: 72px;
@@ -311,49 +392,96 @@ body {
   letter-spacing: 0.025em;
 }
 
+.supplement-item.count td {
+  position: relative;
+
+  padding-bottom: 11px;
+  padding-left: 23px;
+}
+
+.supplement-item.count td::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  bottom: 17px;
+  left: 0;
+
+  width: 5px;
+
+  background-color: #18a3dd;
+  border-radius: 3px;
+}
+
 .supplement-item.unit {
   font-weight: 700;
   line-height: 22px;
+  text-align: left;
   color: #18a3dd;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
 
 .supplement-item.info {
+  padding-left: 0;
+
+  text-align: left;
   color: #a9a9a9;
   letter-spacing: 0.025em;
 }
 
-.section-header {
-  font-family: "Raleway", Arial, sans-serif;
-  letter-spacing: 0.025em;
+/*features*/
+
+.features {
+  position: relative;
+
+  padding-top: 115px;
+  overflow-y: hidden;
 }
 
-.section-lead {
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 30px;
-  color: #333740;
-  text-transform: uppercase;
+.features::after {
+  content: "";
+  position: absolute;
+  bottom: -89px;
+  left: 50%;
+
+  width: 308px;
+  height: 486px;
+
+  background-image: url("../img/bg-peoples.png");
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
 }
 
-.section-lead span {
-  font-weight: 300;
-}
-
-.section-text {
-  font-family: "Lato", Arial, sans-serif;
-  color: #83888f;
+.features .section-header {
+  margin-bottom: 129px;
 }
 
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 0;
+  margin: 0 65px;
   padding: 0;
 
   list-style: none;
 }
 
-.ffeatures-item .title {
+.features-item {
+  flex-basis: 260px;
+  margin-bottom: 72px;
+}
+
+.features-item:nth-child(even) {
+  margin-left: 490px;
+}
+
+.features-item .title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 25px;
+
   font-weight: 700;
   font-size: 20px;
   font-family: "Raleway", Arial, sans-serif;
@@ -362,9 +490,51 @@ body {
   letter-spacing: 0.025em;
 }
 
+.features-item .title::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: -15px;
+
+  width: 5px;
+
+  background-color: #18a3dd;
+  border-radius: 3px;
+}
+
+.features-item:nth-child(odd) .title {
+  padding-right: 26px;
+
+  text-align: right;
+}
+
+.features-item:nth-child(odd) .title::after {
+  right: -1px;
+}
+
+.features-item:nth-child(even) .title {
+  padding-left: 31px;
+
+  text-align: left;
+}
+
+.features-item:nth-child(even) .title::after {
+  left: 1px;
+}
+
 .features-item .description {
+  margin: 0;
+
   color: #5b5f64;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.015em;
+}
+
+.features-item:nth-child(odd) .description {
+  text-align: right;
+}
+
+.features-item:nth-child(even) .description {
+  text-align: left;
 }
 
 .results-list {
