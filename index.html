@@ -86,7 +86,7 @@
       </ul>
     </section>
 
-    <section class="results">
+    <section class="results container">
       <header class="section-header">
         <h2 class="section-lead">Real Man
           <span>Real Results</span>
@@ -99,103 +99,111 @@
             <img class="img-before" src="img/img-human-before.jpg" alt="Фото До" width="262" height="300">
             <img class="img-after" src="img/img-human-after.jpg" alt="Фото После" width="360" height="400">
           </div>
-          <table class="results-table">
-            <tr class="weight">
-              <td class="count">87<span>kg</span></td>
-              <td class="count">63<span>kg</span></td>
-            </tr>
-            <tr class="time">
-              <th>Before</th>
-              <th>After</th>
-            </tr>
-          </table>
-          <div class="about-human">
-            <p class="name">Mike Andersen</p>
-            <p class="age">Age: 28</p>
+          <div class="info-wrapper">
+            <table class="results-table">
+              <tr class="weight">
+                <td class="count">87<span>kg</span></td>
+                <td class="count">63<span>kg</span></td>
+              </tr>
+              <tr class="time">
+                <th>Before</th>
+                <th>After</th>
+              </tr>
+            </table>
+            <div class="about-human">
+              <p class="name">Mike Andersen</p>
+              <p class="age">Age: 28</p>
+            </div>
           </div>
         </li>
       </ul>
-      <div class="results__toggles">
-        <button class="results__toggle" type="button">first slide</button>
-        <button class="results__toggle results__toggle--active" type="button">second slide</button>
-        <button class="results__toggle" type="button">third slide</button>
-        <div class="results__arrows">
-          <button class="results__arrow results__arrow--left" type="button"><span class="visually-hidden">slide to the left</span></button>
-          <button class="results__arrow results__arrow--right" type="button"><span class="visually-hidden">slide to the right</span></button>
+      <div class="slider-toggles">
+        <button class="slider-toggle" type="button"><span class="visually-hidden">first slide</span></button>
+        <button class="slider-toggle active" type="button"><span class="visually-hidden">second slide</span></button>
+        <button class="slider-toggle" type="button"><span class="visually-hidden">third slide</span></button>
+      </div>
+      <button class="slider-arrow arrow-left" type="button"><span class="visually-hidden">slide to the left</span></button>
+      <button class="slider-arrow arrow-right" type="button"><span class="visually-hidden">slide to the right</span></button>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-lead">Client
+            <span>Testimonials</span>
+          </h2>
+          <p class="section-text">We don’t just sell, we’re beloved too.</p>
+        </header>
+        <div class="testimonials-list">
+          <blockquote class="testimonials-item">
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minimveniam, quis nostrud exerci tation ullamcorper sus-cipit lobortis nisl ut aliquip. sed diam nonummy nibh euismod.</p>
+            <div class="author-wrapper">
+              <img class="photo" src="img/img-client-alena.png" alt="Client photo" width="65" height="73">
+              <div class="author-info-wrapper">
+                <cite class="author">Alena Parker </cite>
+                <p class="location">Sydney, Australia</p>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+        <div class="slider-toggles">
+          <button class="slider-toggle" type="button"><span class="visually-hidden">first slide</span></button>
+          <button class="slider-toggle active" type="button"><span class="visually-hidden">second slide</span></button>
+          <button class="slider-toggle" type="button"><span class="visually-hidden">third slide</span></button>
         </div>
       </div>
     </section>
 
-    <section class="testimonials">
-      <header class="section-header">
-        <h2 class="section-lead">Client
-          <span>Testimonials</span>
-        </h2>
-        <p class="section-text">We don’t just sell, we’re beloved too.</p>
-      </header>
-      <div class="testimonials-list">
-        <blockquote class="testimonials-item">
-          <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minimveniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. sed diam nonummy nibh euismod.</p>
-          <img class="photo" src="img/img-client-alena.png" alt="Client photo" width="65" height="73">
-          <cite class="author">Alena Parker </cite>
-          <p class="location">Sydney, Australia</p>
-        </blockquote>
-      </div>
-      <div class="testimonials-toggles">
-        <button class="testimonials-toggle" type="button">first slide</button>
-        <button class="testimonials-toggle testimonials-active" type="button">second slide</button>
-        <button class="testimonials-toggle" type="button">third slide</button>
-      </div>
-    </section>
-
-    <section class="facts">
+    <section class="facts container">
       <header class="section-header">
         <h2 class="section-lead">Supplement
           <span>Facts</span>
         </h2>
         <p class="section-text">We’re brave enough to show what we use.</p>
       </header>
-      <table class="facts-table">
-        <tr class="facts-head">
-          <th class="first-column">Ingredients</th>
-          <th class="second-column">Per serving
-            <span>(Mg)</span>
-          </th>
-        </tr>
-        <tr class="facts-item">
-          <td class="name">Citrus Aurantium</td>
-          <td class="count">100</td>
-        </tr>
-        <tr class="facts-item facts-active">
-          <td class="name">Green Coffee Extract</td>
-          <td class="count">72</td>
-        </tr>
-        <tr class="facts-item">
-          <td class="name">Green Tea Extract</td>
-          <td class="count">88</td>
-        </tr>
-        <tr class="facts-item">
-          <td class="name">Guarana Extracts w/ 10% Caffeine</td>
-          <td class="count">4</td>
-        </tr>
-        <tr class="facts-item">
-          <td class="name">L-Phenylalanine</td>
-          <td class="count">67</td>
-        </tr>
-        <tr class="facts-item">
-          <td class="name">Niacin</td>
-          <td class="count">87</td>
-        </tr>
-        <tr class="facts-item">
-          <td class="name">Red Pepper Extract</td>
-          <td class="count">323</td>
-        </tr>
-        <tr class="facts-item">
-          <td class="name">Vitamin B6</td>
-          <td class="count">8</td>
-        </tr>
-      </table>
-      <a class="btn facts-btn" href="#">Download Specs<span>(50 KB)</span></a>
+      <div class="specs-wrapper">
+        <table class="facts-table">
+          <tr class="facts-head">
+            <th class="first-column">Ingredients</th>
+            <th class="second-column">Per serving
+              <span>(Mg)</span>
+            </th>
+          </tr>
+          <tr class="facts-item">
+            <td class="name">Citrus Aurantium</td>
+            <td class="count">100</td>
+          </tr>
+          <tr class="facts-item facts-active">
+            <td class="name">Green Coffee Extract</td>
+            <td class="count">72</td>
+          </tr>
+          <tr class="facts-item">
+            <td class="name">Green Tea Extract</td>
+            <td class="count">88</td>
+          </tr>
+          <tr class="facts-item">
+            <td class="name">Guarana Extract w/ 10% Caffeine</td>
+            <td class="count">4</td>
+          </tr>
+          <tr class="facts-item">
+            <td class="name">L-Phenylalanine</td>
+            <td class="count">67</td>
+          </tr>
+          <tr class="facts-item">
+            <td class="name">Niacin</td>
+            <td class="count">87</td>
+          </tr>
+          <tr class="facts-item">
+            <td class="name">Red Pepper Extract</td>
+            <td class="count">323</td>
+          </tr>
+          <tr class="facts-item">
+            <td class="name">Vitamin B6</td>
+            <td class="count">8</td>
+          </tr>
+        </table>
+        <a class="btn facts-btn" href="#">Download Specs<span>(50KB)</span></a>
+      </div>
       <div class="selected-item">
         <img class="image" src="img/img-green-coffee.png" alt="Green coffee extract" width="103" height="116">
         <div class="about-item">
