@@ -105,6 +105,8 @@ body {
   line-height: 24px;
   font-family: "Lato", Arial, sans-serif;
   color: #666666;
+  word-wrap: break-word;
+  word-break: break-all;
 
   background-color: #ffffff;
 }
@@ -203,6 +205,7 @@ body {
 
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 27px 0 24px;
@@ -227,8 +230,8 @@ body {
 }
 
 .menu-btn {
-  padding-right: 17px;
-  padding-bottom: 4px;
+  margin-right: 17px;
+  margin-bottom: 4px;
 
   font-size: 39px;
   color: #666666;
@@ -349,6 +352,9 @@ body {
 .promo-image {
   position: relative;
   right: -55px;
+
+  width: 649px;
+  height: 535px;
 }
 
 /*about-supplement*/
@@ -663,6 +669,7 @@ body {
 
 .slider-toggles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 82px;
   margin: 0 auto;
@@ -671,6 +678,7 @@ body {
 .slider-toggle {
   width: 12px;
   height: 12px;
+  margin-bottom: 10px;
 
   background-color: #d8e4e8;
   border: none;
@@ -728,11 +736,13 @@ body {
 }
 
 /*testimonials*/
-.testimonials {
-  margin-top: 119px;
-  padding-top: 116px;
-  padding-bottom: 121px;
 
+.testimonials {
+  margin-top: 109px;
+  padding-top: 116px;
+  padding-bottom: 111px;
+
+  background-color: #0f0816;
   background-image: url("../img/bg-clients.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -775,6 +785,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-bottom: 10px;
   margin-left: 284px;
 }
 
@@ -851,24 +862,16 @@ body {
 }
 
 .facts-head {
+  position: relative;
+
   font-weight: 900;
   font-size: 24px;
   line-height: 24px;
   color: #333740;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-}
 
-.facts-head::after {
-  content: "";
-  position: absolute;
-  top: 62px;
-  right: 1px;
-  left: 3px;
-
-  height: 5px;
-
-  background-color: #333740;
+  box-shadow: 0 5px 0 0 #333740;
 }
 
 .facts-head th {
@@ -894,27 +897,18 @@ body {
 }
 
 .facts-item {
-  border-bottom: 1px solid  #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .facts-active {
   position: relative;
-  z-index: 3;
+
+  border: none;
+  border-top: 2px solid white;
+  box-shadow: 0 0 0 10px #ffffff,
+  0 0 0 11px #d7d7d7,
+  0 0 10px 11px #000000;
 }
-
-/* .facts-active::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-top: 114px;
-  right: -15px;
-  bottom: 223px;
-  left: -13px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px -3px #000;
-
-  border: 1px solid #d7d7d7;
-  } */
 
 .facts-item td {
   padding: 8px 0 7px;
@@ -1008,7 +1002,7 @@ top: 114px;
 
 .certifications {
   padding-top: 77px;
-  padding-bottom: 79px;
+  padding-bottom: 69px;
 
   background-color: #f1f4f5;
 }
@@ -1038,6 +1032,7 @@ top: 114px;
 
 .certifications-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0;
@@ -1053,7 +1048,7 @@ top: 114px;
   flex-basis: 165px;
   justify-content: center;
   align-items: center;
-  height: auto;
+  margin-bottom: 11px;
 
   opacity: 0.5;
 }
@@ -1085,6 +1080,8 @@ top: 114px;
 }
 
 .order .image {
+  width: 744px;
+  height: 489px;
   margin-left: -100px;
 }
 
@@ -1095,6 +1092,8 @@ top: 114px;
 }
 
 .about-title {
+  position: relative;
+
   margin: 0;
   margin-bottom: 7px;
   padding-left: 30px;
@@ -1105,6 +1104,19 @@ top: 114px;
   font-family: "Raleway", Arial, sans-serif;
   color: #333740;
   text-transform: uppercase;
+}
+
+.about-title::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: -13px;
+  left: -1px;
+
+  width: 5px;
+
+  background-color: #18a3dd;
+  border-radius: 3px;
 }
 
 .about-count {
@@ -1130,6 +1142,7 @@ top: 114px;
   padding-top: 96px;
   padding-bottom: 121px;
 
+  background-color: #060606;
   background-image: url("../img/bg-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1196,12 +1209,17 @@ top: 114px;
   left: 435px;
   z-index: 3;
 
+  width: 151px;
+  height: 50px;
   padding: 16px 31px;
+  overflow: hidden;
 
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   background-color: #18a3dd;
   border: none;
@@ -1224,6 +1242,8 @@ top: 114px;
 .feedback {
   padding-top: 116px;
   padding-bottom: 119px;
+
+  word-break: normal;
 }
 
 .feedback .section-header {
@@ -1321,6 +1341,7 @@ top: 114px;
 }
 
 .page-footer .copyright {
+  width: 263px;
   margin: 0;
   margin-bottom: 17px;
 
@@ -1330,6 +1351,7 @@ top: 114px;
 
 .info-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -1343,7 +1365,7 @@ top: 114px;
   margin-right: 25px;
 }
 
-.info-item::after:not(:last-child) {
+.info-item:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 6px;
